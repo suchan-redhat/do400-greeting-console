@@ -25,7 +25,7 @@ pipeline {
       steps {
         sh '''
         oc project vtfnoh-greetings
-        oc start-build greeting - console--follow--wait 
+        oc start-build greeting-console --follow --wait 
         '''
       }
     }
